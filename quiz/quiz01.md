@@ -1,4 +1,4 @@
-# QUIZ01
+# QUIZ 01
 
 ### Q1
 
@@ -26,7 +26,7 @@ Instruction:
 ### Q2
 
 * 리스트의 인덱스, 슬라이스, 치환에 관한 퀴즈입니다.
-* 파일명은 quiz01_1.py로 저장합니다
+* 파일명은 quiz01_2.py로 저장합니다
 * 다음과 같이 리스트가 선언되어 있습니다.
 
 ```python
@@ -48,6 +48,7 @@ Instruction:
 ### Q3
 
 * 리스트와 사전을 다루는 퀴즈입니다.
+* 파일명은 quiz01_3.py로 저장합니다
 * 다음과 같이 사전을 포함한 리스트가 선언되어 있습니다.
 
 ```python
@@ -87,6 +88,7 @@ students = [
 Instruction:
 
 * 리스트 lst_date, lst_dow, lst_price를 만들고 각 항목의 목록을 담아 봅시다.
+* 파일명은 quiz01_4.py로 저장합니다
 * kospi_price라는 이름의 빈 사전을 만들어 봅니다.
 * dow, price 키값을 보유한 사전을 만들어 kospi_price 사전에 date를 키값으로 추가해 봅시다.
 
