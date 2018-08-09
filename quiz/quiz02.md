@@ -1,68 +1,61 @@
-# Quiz 02
+# QUIZ 03: if and loop
 
 ### Q1
 
-* 파일명은 quiz02_1.py로 저장합니다.
-* 키보드로 정수를 입력 받습니다.
-* 만일 입력받은 값이 정수 형태가 아니면 "정수가 아닙니다"를 출력하고 다시 입력을 받습니다.
-* 만일 입력받은 값이 정수라면 1부터 해당 입력값까지의 정수 중에서 3의 배수만 합산하여 출력합니다.
+* 키보드로부터 score1, score2를 입력받아 다음 조건에 부합하면 '합격', 아니면 '불합격'을 출력해 봅시다.
+* 파일명은 quiz03_1.py로 저장합니다
 
-```
-(결과)
+    - 조건 1: 두 과목 모두 50점 이상
+    - 조건 2: 두 과목 평균 60점 이상
 
-수를 입력하세요:abc
-정수가 아닙니다. 다시 입력하세요
-수를 입력하세요:100
-1부터 100까지 3의 배수의 합 = 1683
-```
+* 입력값은 정수라고 가정합니다.
 
 ### Q2
 
-* 파일명은 quiz02_2.py로 합니다.
-* 다음과 같이 리스트가 선언되어 있다고 가정합니다.
+* 구구단을 만들어 봅시다.
+* 파일명은 quiz03_2.py로 저장합니다.
+* 출력 예시는 아래와 같습니다.
 
 ```
-lst = [1, 3.14, 'python', 7, 89.1, 3]
-```
+1 단
+1 x 1 = 2
+1 x 2 = 3
+1 x 3 = 4
+1 x 4 = 5
+1 x 5 = 6
+1 x 6 = 7
+1 x 7 = 8
+1 x 8 = 9
+1 x 9 = 10
 
-* 해당 리스트에서 정수형, 실수형 데이터만 추출하여 lst_cleaned 라는 이름의 리스트에 담아 봅시다.
+2 단
+...
+```
 
 ### Q3
 
-* 파일명은 quiz02_3.py로 합니다.
-* 메서드를 하나 만들고, 임의의 개수의 인수를 받아서 해당 인수의 합, 최대값, 최소값, 평균값을 한꺼번에 반환하는 함수를 만들어 봅시다.
+* 무한루프를 작성하고 다음과 같은 행동을 하도록 작성해 봅시다
+
+    - 키보드로부터 입력을 받는다
+    - 입력값이 q 면 루프를 탈출한다
+    - 입력값이 d, w면 금액을 입력받는다
+    - q, d, w 이외의 값이면 ?를 출력한다
+    - 금액을 총액에 합산(d) 혹은 차감(w)한다
+    
+* 파일은 quiz03_3.py로 저장합니다
+* 출력 예시는 아래와 같습니다.
 
 ```
-(함수 사용 예)
-total, maxval, minval, avg = summary(80, 75, 90, 95, 85)
-print(total, maxval, minval, avg)
-
-(결과)
-425 95 75 85.0
-```
-
-### Q4
-
-* 파일명은 quiz02_4.py로 합니다.
-* 다음과 같이 문자열이 설정되어 있습니다.
-```
-s = """We encourage everyone to contribute to Python. 
-If you still have questions after reviewing the material
-in this guide, then the Python Mentors 
-group is available to help guide new contributors through the process."""
-```
-
-* 문자열에서 ',', '.', '\n'을 제거하고 모두 대문자로 변경합니다.
-* 변경된 소스를 기반으로 단어의 빈도수를 체크해 봅시다.
-
-```
-(실행 결과 예시)
-WE: 1
-ENCOURAGE: 1
-EVERYONE: 1
-TO: 3
-CONTRIBUTE: 1
-PYTHON: 2
-IF: 1
-...
+method: d
+Amount: 1000
+Balance: 1000
+method: f
+?
+method: w
+Amount: 500
+Balance: 500
+method: d
+Amount: 1500
+Balance: 2000
+method: q
 ```
